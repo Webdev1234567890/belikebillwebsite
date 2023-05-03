@@ -1,0 +1,1 @@
+const goTo=e=>{$("#menu").hide(),$("html, body").animate({scrollTop:$("#"+e).offset().top-80},1e3)},openMenu=()=>{$("#menu").css("display","flex")};
