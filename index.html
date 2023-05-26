@@ -1,163 +1,189 @@
 <!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Be Like Bill</title>
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/BillWhite (1).png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/BillWhite (1).png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/belikebill-removebg-preview.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/belikebill-removebg-preview.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/belikebill-removebg-preview.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/belikebill-removebg-preview.png">
-    <link rel="manifest" href="assets/ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#000000">
-    <script src="js/prev.js"></script>
-</head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Be Like Bill</title>
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
 
-<body>
-    <div class="imgPreload"><img src="images/BillWhite (1).png"> <img src="images/BillWhite (1).png"> <img src="images/BillWhite (1).png"></div>
-    <header>
-        <div class="boxed">
-            <div class="logo"><img src="images/BillWhite (1).png" alt="Logo Be Like Bill">
-                <div class="border">Be Like Bill</div>
-            </div>
-            <div class="menu">
-                <a onclick="goTo('Home')" href="#">Home</a>
-                <a onclick="goTo('about')" href="#">About</a>
-                <a onclick="goTo('Story')" href="#">Story</a>
-                <a onclick="goTo('Billnomics')" href="#">Billnomics</a>
-                <a onclick="goTo('Roadmap')" href="#">Roadmap</a>
-              </div>
-            <div class="menuMobile" onclick="openMenu()"></div>
-        </div>
-    </header>
-    <div class="content">
-        <div id="Home" class="page homePage" style="min-height:100vh">
-            <div class="brianRoot">
-                <div class="Bill"><img src="images/BillWhite (1).png" alt="Logo Be Like Bill">
-                    <div class="baseball"></div>
-                </div>
-                <div class="lettersTop border" id="caption1">Invests in NFT project</div>
-                <div class="lettersBottom border" id="caption2">turns out to be a rug pull</div>
-            </div>
-            <div class="letters border">
-                <div class="titleLetter border">Be Like Bill</div>The most memeable guy ever in human existence.
-                Let's make $BILL great again!
-                <div class="links">
-                    <a href="https://twitter.com/" target="_blank">
-                      <img src="images/twitter.webp" alt="Twitter">
-                    </a>
-                    <a href="https://t.me/BeLikeBillERC20" target="_blank">
-                      <img src="images/telegram.webp" alt="Telegram">
-                    </a>
-                  </div>                                     
-            </div>
-        </div>
-        <div class="page" style="height:900px">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/BillWhite (1).png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/BillWhite (1).png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/belikebill-removebg-preview.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/belikebill-removebg-preview.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/belikebill-removebg-preview.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/belikebill-removebg-preview.png">
+        <link rel="manifest" href="assets/ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#000000">
+        <script src="js/prev.js"></script>
+    </head>
+
+    <body>
+        <div class="imgPreload"><img src="images/BillWhite (1).png"> <img src="images/BillWhite (1).png"> <img src="images/BillWhite (1).png"></div>
+        <header>
             <div class="boxed">
-                <div class="card"><br><br>
-                    <div class="title border">$BILL is going to the moon</div>
-                    <div class="cohete"><img class="humo" src="images/humo.png"> <img class="humo1" src="images/humo.png"> <img class="humo2" src="images/humo.png"> <img class="sun" src="images/sun.png"> <img class="earth" src="images/earth.gif"> <img class="moon" src="images/moon.png"> <img class="cohete" src="images/cohete.png"></div>
+                <div class="logo"><img src="images/BillWhite (1).png" alt="Logo Be Like Bill">
+                    <div class="border">Be Like Bill</div>
                 </div>
+                <div class="menu">
+                    <a onclick="goTo('Home')" href="#">Home</a>
+                    <a onclick="goTo('about')" href="#">About</a>
+                    <a onclick="goTo('Story')" href="#">Story</a>
+                    <a onclick="goTo('Billnomics')" href="#">Billnomics</a>
+                    <a onclick="goTo('Roadmap')" href="#">Roadmap</a>
+                  </div>
+                <div class="menuMobile" onclick="openMenu()"></div>
             </div>
-        </div>
-        <div id="About" class="page">
-            <div class="boxed">
-                <div class="card"><br><br>
-                    <div class="title border">About $BILL</div>
-                    <div class="flexGrid">
-                        <div class="img"><img src="images/BillWhite (1).png" alt="Rich Brian"></div>
-                        <div><br>Bill was an average Bill, the son of Bill and grandson of Bill, you wouldn't want to be like Bill.<br><br>You can recognize Bill by his standard beanie and limp arms.<br><br>Bill discovered crypto.<br>
-                        <br>Bill took a loan and invested all his money into memecoins,<br><br> Bill is no longer an average Bill.<br><br>Bill is smart.<br><br>Be like $BILL<br></div>
+        </header>
+        <div class="content">
+            <div id="Home" class="page homePage" style="min-height:100vh">
+                <div class="brianRoot">
+                    <div class="Bill"><img src="images/BillWhite (1).png" alt="Logo Be Like Bill">
+                        <div class="baseball"></div>
                     </div>
+                    <div class="lettersTop border" id="caption1">Invests in NFT project</div>
+                    <div class="lettersBottom border" id="caption2">turns out to be a rug pull</div>
                 </div>
-            </div>
-        </div>
-        <div id="Story" class="page">
-            <div class="boxed">
-                <div class="card"><br><br>
-                    <div class="title border">The Story of $BILL</div>
-                    <div class="flexGrid">
-                        <div><br>Bill found Safemoon early and bought $100 worth of Safemoon!!, 20 minutes later Bill sold for a loss, because there was no call from Ceasar!!!. <br><br>Bill could be a millionair, but he jeeted. Be Like Bill!</div>
-                        <div class="img"><img src="images/BillWhite (1).png" alt="Supreme Brian" style="width:180px"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="Billnomics" class="page">
-            <div class="boxed">
-                <div class="card"><br><br>
-                    <div class="title border">Billnomics</div>
-                    <div class="flexGrid">
-                        <div style="padding-right:50px"><br><br>
-                            <div>Token supply<br><b>1 Bill (1.000.000.000)</b></div><br><br>0% Tax, because... well because Bill can.<br><br>93% goes to the liquidity pool, LP tokens will be locked and contract is
-                            renounced. The remaining lucky number (7%) will be held and will only be used for the partnerships and marketing for Be Like Bill.
-                            <pre>Be Like Bill</pre>
-                        </div>
-                        <div class="img"><img src="images/BillWhite (1).png" class="head"> <img src="images/conversation.png" class="conversation"></div>
-                    </div><br><br><br>
-                </div>
-            </div>
-        </div>
-        <div id="Roadmap" class="page">
-            <div class="boxed">
-                <div class="card"><br><br>
-                    <div class="title border">RoadMap</div>
-                    <div class="phase">Phase 1 - Bill</div>
-                    <div class="phase">Phase 2 - Bill</div>
-                    <div class="phase">Phase 3 - Be Like Bill</div>
-                    <div class="flexGrid">
-                        <div style="padding-right:50px"><br><br>All jokes aside, here is a rough sketch of $BILL
-                            path ahead. We dont wan’t to give everything away on day 1, Expect surprises along the
-                            way ;)</div>
-                    </div>
-                </div>
-            </div><br><br><br>
-        </div>
-        <div class="footer">
-            <div class="boxed"><br><br><br>
-                <p>$BILL is a meme coin with no intrinsic value or expectation of financial return. There is no
-                    formal team or roadmap. the coin is completely useless and for entertainment purposes only.</p>
+                <div class="letters border">
+                    <div class="titleLetter border">Be Like Bill</div>The most memeable guy ever in human existence.
+                    Let's make $BILL great again!
                     <div class="links">
-                        <a href="https://twitter.com/" target="_blank">
-                          <img src="images/twitter.webp" alt="Twitter">
+                        <a href="https://twitter.com/BeLikeBillERC20" target="_blank" data-aos="zoom-in-left">
+                            <img src="images/twitter.webp" alt="Twitter">
                         </a>
-                        <a href="https://t.me/BeLikeBillERC20" target="_blank">
-                          <img src="images/telegram.webp" alt="Telegram">
+                        <a href="https://t.me/BeLikeBillERC20" target="_blank" data-aos="zoom-in-right">
+                            <img src="images/telegram.webp" alt="Telegram">
                         </a>
-                      </div>                          
-                <p>© 2023 by Be Like Bill. All rights reserved!</p><br><br><br>
+                    </div>                                                      
+                </div>
+            </div>
+            <div class="page" style="height:900px">
+                <div class="boxed">
+                    <div class="card"><br><br>
+                        <div class="title border" data-aos="flip-down" data-aos-duration="1500">$BILL is going to the moon</div>
+                        <div class="cohete"><img class="humo" src="images/humo.png"> <img class="humo1" src="images/humo.png"> <img class="humo2" src="images/humo.png"> <img class="sun" src="images/sun.png"> <img class="earth" src="images/earth.gif"> <img class="moon" src="images/moon.png"> <img class="cohete" src="images/cohete.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="About" class="page">
+                <div class="boxed">
+                    <div class="card"><br><br>
+                        <div class="title border" data-aos="flip-down" data-aos-duration="1500">About $BILL</div>
+                        <div class="flexGrid">
+                            <div class="img" data-aos="flip-down" data-aos-duration="1500"><img src="images/BillWhite (1).png" alt="Rich Brian"></div>
+                            <div data-aos="flip-down" data-aos-duration="1500">
+                                <br>
+                                Bill was an average Bill, the son of Bill and grandson of Bill, you wouldn't want to be like Bill.
+                                <br><br>
+                                You can recognize Bill by his standard beanie and limp arms.
+                                <br><br>
+                                Bill discovered crypto.
+                                <br>
+                                <br>
+                                Bill took a loan and invested all his money into memecoins,
+                                <br><br>
+                                Bill is no longer an average Bill.
+                                <br><br>
+                                Bill is smart.
+                                <br><br>
+                                Be like $BILL
+                                <br>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Story" class="page">
+                <div class="boxed">
+                    <div class="card"><br><br>
+                        <div class="title border"data-aos="flip-down" data-aos-duration="1500">The Story of $BILL</div>
+                        <div class="flexGrid"data-aos="flip-down" data-aos-duration="1500">
+                            <div><br>Bill found Safemoon early and bought $100 worth of Safemoon!!, 20 minutes later Bill sold for a loss, because there was no call from Ceasar!!!. <br><br>Bill could be a millionair, but he jeeted. Be Like Bill!</div>
+                            <div class="img"data-aos="flip-down" data-aos-duration="1500"><img src="images/BillWhite (1).png" alt="Supreme Brian" style="width:180px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Billnomics" class="page">
+                <div class="boxed">
+                    <div class="card"><br><br>
+                        <div class="title border"data-aos="flip-down" data-aos-duration="1500">Billnomics</div>
+                        <div class="flexGrid"data-aos="flip-down" data-aos-duration="1500">
+                            <div style="padding-right:50px"><br><br>
+                                <div>Token supply<br><b>1 BILL (1.000.000.000 $BILL)</b></div><br><br>0% Tax, because... well because Bill can.<br><br>93% goes to the liquidity pool, LP tokens will be locked and contract is
+                                renounced. The remaining lucky number (7%) will be used for marketing, partnerships and to pay bills.
+                                <pre>Be Like Bill</pre>
+                            </div>
+                            <div class="img"data-aos="zoom-in-right" data-aos-duration="1500"><img src="images/BillWhite (1).png" class="head"> <img src="images/conversation.png" class="conversation"></div>
+                        </div><br><br><br>
+                    </div>
+                </div>
+            </div>
+            <div id="Roadmap" class="page">
+                <div class="boxed">
+                    <div class="card"><br><br>
+                        <div class="title border"data-aos="flip-down" data-aos-duration="1500">RoadMap</div>
+                        <div class="phase"data-aos="flip-down" data-aos-duration="1500">Phase 1 - Bill</div>
+                        <div class="phase"data-aos="flip-down" data-aos-duration="1500">Phase 2 - Bill</div>
+                        <div class="phase"data-aos="flip-down" data-aos-duration="1500">Phase 3 - Be Like Bill</div>
+                        <div class="flexGrid"data-aos="flip-down" data-aos-duration="1500">
+                            <div style="padding-right:50px"><br><br>All jokes aside, here is a rough sketch of $BILL
+                                path ahead. We dont wan’t to give everything away on day 1, Expect surprises along the
+                                way ;)</div>
+                        </div>
+                    </div>
+                </div><br><br><br>
+            </div>
+            <div class="footer">
+                <div class="boxed"data-aos="flip-down" data-aos-duration="1500"><br><br><br>
+                    <p>$BILL is a meme coin with no intrinsic value or expectation of financial return. There is no
+                        formal team or roadmap. the coin is completely useless and for entertainment purposes only.</p>
+                        <div class="links"data-aos="flip-down" data-aos-duration="1500">
+                            <a href="https://twitter.com/BeLikeBillERC20" target="_blank">
+                              <img src="images/twitter.webp" alt="Twitter">
+                            </a>
+                            <a href="https://t.me/BeLikeBillERC20" target="_blank">
+                              <img src="images/telegram.webp" alt="Telegram">
+                            </a>
+                          </div>                          
+                    <p>© 2023 by Be Like Bill. All rights reserved!</p><br><br><br>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="menu">
-        <img src="images/close.png" class="close" onclick="document.querySelector('#menu').style.display = 'none'">
-        <a onclick="goTo('Home')" href="#home">Home</a>
-        <a onclick="goTo('About')" href="#">About</a>
-        <a onclick="goTo('Story')" href="#">Story</a>
-        <a onclick="goTo('Billnomics')" href="#">Billnomics</a>
-        <a onclick="goTo('Roadmap')" href="#">Roadmap</a>
-      </div>
-      <div id="splash">
-        <img src="images/BillWhite (1).png">
-        <div class="border">Loading...</div>
-      </div>          
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/wait.js"></script>
-    <script src="js/index.js"></script>
-
-
+        <div id="menu">
+            <img src="images/close.png" class="close" onclick="document.querySelector('#menu').style.display = 'none'">
+            <a onclick="goTo('Home')" href="#home">Home</a>
+            <a onclick="goTo('About')" href="#">About</a>
+            <a onclick="goTo('Story')" href="#">Story</a>
+            <a onclick="goTo('Billnomics')" href="#">Billnomics</a>
+            <a onclick="goTo('Roadmap')" href="#">Roadmap</a>
+          </div>
+          <div id="splash">
+            <img src="images/BillWhite (1).png">
+            <div class="border">Loading...</div>
+          </div>          
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/wait.js"></script>
+        <script src="js/index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+        <script>
+            AOS.init({
+                once: false
+            });
+        </script>
 </body></html>
